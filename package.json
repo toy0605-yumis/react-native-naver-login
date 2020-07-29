@@ -4,7 +4,7 @@
   "description": "React Native Module for Naver Login",
   "main": "index.js",
   "scripts": {
-    "postinstall": "tsc && flowgen index.d.ts -o index.js.flow",
+    "postinstall": "npm run build",
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "tsc && flowgen index.d.ts -o index.js.flow",
     "flow": "flow",
