@@ -4,7 +4,7 @@
   "description": "React Native Module for Naver Login",
   "main": "index.js",
   "scripts": {
-    "postinstall": "npm run build",
+    "postinstall": "tsc && flowgen index.d.ts -o index.js.flow",
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "tsc && flowgen index.d.ts -o index.js.flow",
     "flow": "flow",
@@ -33,7 +33,7 @@
     "react": "*",
     "react-native": "*"
   },
-  "devDependencies": {
+  "dependencies": {
     "@dooboo/eslint-config": "^0.2.0",
     "@types/eslint": "^6.1.1",
     "@types/node": "^12.7.12",
