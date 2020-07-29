@@ -2,9 +2,9 @@
   "name": "@react-native-seoul/naver-login",
   "version": "2.1.0",
   "description": "React Native Module for Naver Login",
-  "main": "index.js",
-  "postinstall": "dooboolab-welcome postinstall && tsc && flowgen index.d.ts -o index.js.flow",
+  "main": "index.js"
   "scripts": {
+    "postinstall": "tsc && flowgen index.d.ts -o index.js.flow",
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "tsc && flowgen index.d.ts -o index.js.flow",
     "flow": "flow",
@@ -32,9 +32,6 @@
   "peerDependencies": {
     "react": "*",
     "react-native": "*"
-  },
-  "dependencies": {
-    "dooboolab-welcome": "^1.1.1"
   },
   "devDependencies": {
     "@dooboo/eslint-config": "^0.2.0",
