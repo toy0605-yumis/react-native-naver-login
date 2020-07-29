@@ -3,7 +3,7 @@
   "version": "2.1.0",
   "description": "React Native Module for Naver Login",
   "main": "index.js",
-  "postinstall": "dooboolab-welcome postinstall",
+  "postinstall": "dooboolab-welcome postinstall && yarn build",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "tsc && flowgen index.d.ts -o index.js.flow",
