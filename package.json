@@ -2,7 +2,7 @@
   "name": "@react-native-seoul/naver-login",
   "version": "2.1.0",
   "description": "React Native Module for Naver Login",
-  "main": "index.js"
+  "main": "index.js",
   "scripts": {
     "postinstall": "tsc && flowgen index.d.ts -o index.js.flow",
     "test": "echo \"Error: no test specified\" && exit 1",
